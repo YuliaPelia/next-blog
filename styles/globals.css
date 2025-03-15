@@ -1,0 +1,113 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@700&family=Roboto&family=Source+Sans+Pro:wght@300&family=Cinzel:wght@400;600;700&display=swap');
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  /* Драконяча колірна схема */
+  --color-dragon-dark: #150707;
+  --color-dragon-blood: #8a0303;
+  --color-dragon-fire: #ff5733;
+  --color-dragon-gold: #ffd700;
+  --color-dragon-scales: #2a1215;
+  
+  /* Базова колірна схема проекту */
+  --color-grey-50: hsl(265, 55%, 96%);
+  --color-grey-100: hsl(265, 19%, 88%);
+  --color-grey-200: hsl(265, 7%, 70%);
+  --color-grey-300: hsl(265, 6%, 66%);
+  --color-grey-400: hsl(265, 4%, 57%);
+  --color-grey-500: hsl(265, 3%, 53%);
+  --color-grey-600: hsl(265, 4%, 42%);
+  --color-grey-700: hsl(265, 4%, 31%);
+  --color-grey-800: hsl(276, 5%, 20%);
+  --color-grey-900: hsl(280, 5%, 13%);
+
+  --color-primary-50: #c8b3ce;
+  --color-primary-100: #a07aaa;
+  --color-primary-200: #884c97;
+  --color-primary-300: #843897;
+  --color-primary-400: #732392;
+  --color-primary-500: #5a097a;
+  --color-primary-600: #480264;
+  --color-primary-700: #3d0264;
+
+  --color-success-100: #a2f0bc;
+  --color-success-500: #12bd4b;
+
+  --color-error-100: #f1acc9;
+  --color-error-500: #a10c4a;
+
+  --size-1: 0.25rem;
+  --size-2: 0.5rem;
+  --size-3: 0.75rem;
+  --size-4: 1rem;
+  --size-5: 1.25rem;
+  --size-6: 1.5rem;
+  --size-8: 2rem;
+  --size-16: 4rem;
+  --size-20: 5rem;
+  --size-40: 10rem;
+
+  margin: 0;
+  background-color: var(--color-dragon-dark);
+  color: #f1f1f1;
+  font-family: 'Roboto', sans-serif;
+  background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="100" height="100" viewBox="0 0 100 100"><path fill="rgba(138, 3, 3, 0.05)" d="M25,40 L50,15 L75,40 L50,65 Z" /></svg>');
+  background-size: 100px 100px;
+}
+
+h1,
+h2,
+h3 {
+  font-family: 'Cinzel', 'Oswald', sans-serif;
+  color: var(--color-dragon-gold);
+  text-shadow: 0 2px 10px rgba(255, 87, 51, 0.3);
+}
+
+a {
+  text-decoration: none;
+  color: var(--color-dragon-fire);
+  transition: color 0.3s ease, text-shadow 0.3s ease;
+}
+
+a:hover {
+  color: var(--color-dragon-gold);
+  text-shadow: 0 0 8px rgba(255, 215, 0, 0.6);
+}
+
+button {
+  font: inherit;
+  cursor: pointer;
+  background-color: var(--color-dragon-blood);
+  color: white;
+  border: none;
+  padding: 0.5rem 1.5rem;
+  border-radius: 4px;
+  box-shadow: 0 2px 8px rgba(138, 3, 3, 0.3);
+  transition: all 0.3s ease;
+}
+
+button:hover {
+  background-color: var(--color-dragon-fire);
+  box-shadow: 0 2px 15px rgba(255, 87, 51, 0.5);
+}
+
+/* Стилі скроллбара */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--color-dragon-dark);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--color-dragon-blood);
+  border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--color-dragon-fire);
+}
