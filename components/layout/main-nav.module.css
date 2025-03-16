@@ -1,0 +1,73 @@
+.header {
+  width: 100%;
+  height: 6rem;
+  background-color: var(--color-dragon-dark);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 10%;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  box-shadow: 0 2px 15px rgba(138, 3, 3, 0.6);
+  border-bottom: 2px solid var(--color-dragon-blood);
+}
+
+.header::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="80" height="80" viewBox="0 0 100 100"><path fill="rgba(138, 3, 3, 0.05)" d="M25,40 L50,15 L75,40 L50,65 Z" /></svg>');
+  opacity: 0.1;
+  z-index: -1;
+}
+
+.header ul {
+  list-style: none;
+  display: flex;
+  gap: 2rem;
+  margin: 0;
+  padding: 0;
+  align-items: baseline;
+}
+
+.header li {
+  position: relative;
+}
+
+.header li::after {
+  content: '';
+  position: absolute;
+  bottom: -5px;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background: var(--color-dragon-fire);
+  transition: width 0.3s ease;
+  box-shadow: 0 0 8px var(--color-dragon-fire);
+}
+
+.header li:hover::after {
+  width: 100%;
+}
+
+.header a {
+  color: var(--color-dragon-gold);
+  font-size: 1.1rem;
+  font-family: 'Cinzel', serif;
+  text-decoration: none;
+  text-shadow: 0 0 5px rgba(255, 87, 51, 0.3);
+  position: relative;
+  padding: 0.5rem 0;
+  letter-spacing: 0.5px;
+  transition: all 0.3s ease;
+}
+
+.header a:hover {
+  color: var(--color-dragon-fire);
+  text-shadow: 0 0 10px rgba(255, 215, 0, 0.6);
+  transform: translateY(-2px);
+}
