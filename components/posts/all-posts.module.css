@@ -1,0 +1,50 @@
+.posts {
+  width: 90%;
+  max-width: 80rem;
+  margin: 3rem auto;
+  padding: 2.5rem;
+  background: linear-gradient(135deg, rgba(26, 10, 28, 0.9), rgba(45, 20, 40, 0.9));
+  border-radius: 15px;
+  box-shadow: 0 5px 20px rgba(138, 3, 3, 0.4);
+  border: 2px solid var(--color-dragon-blood);
+  position: relative;
+  overflow: hidden;
+}
+
+.posts::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="100" height="100" viewBox="0 0 100 100"><path fill="rgba(138, 3, 3, 0.05)" d="M25,40 L50,15 L75,40 L50,65 Z" /></svg>');
+  opacity: 0.1;
+  z-index: 0;
+}
+
+.posts h1 {
+  font-size: 3rem;
+  color: var(--color-dragon-gold);
+  text-align: center;
+  margin-bottom: 3rem;
+  text-shadow: 0 2px 10px rgba(255, 87, 51, 0.6);
+  position: relative;
+  z-index: 1;
+  font-family: 'Cinzel', serif;
+}
+
+.posts h1::before,
+.posts h1::after {
+  content: '🔥';
+  display: inline-block;
+  margin: 0 15px;
+  animation: dragonFlame 2.5s infinite alternate;
+  font-size: 0.8em;
+}
+
+@keyframes dragonFlame {
+  0% { opacity: 0.7; transform: scale(0.95) rotate(-5deg); }
+  50% { opacity: 1; transform: scale(1.1) rotate(0deg); }
+  100% { opacity: 0.9; transform: scale(1) rotate(5deg); }
+}
