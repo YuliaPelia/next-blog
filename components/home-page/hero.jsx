@@ -17,7 +17,7 @@ function Hero() {
                 <h1>Hi, I'm Yulia <span className={classes.dragonEmoji}>🐉</span></h1>
                 <p>
                     I blog about web development - especially frontend frameworks like
-                    Angular or React. Join me on this fiery journey through the realm of code!
+                    Next or React. Join me on this fiery journey through the realm of code!
                 </p>
                 <div className={classes.dragonScales}>
                     <span></span>
