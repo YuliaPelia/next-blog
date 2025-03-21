@@ -22,6 +22,12 @@ const nextConfig = (phase) => {
     images: {
       domains: ['res.cloudinary.com', 'res-console.cloudinary.com'],
     },
+    env: {
+      mongodb_username: 'Yulia109',
+      mongodb_password: 'SGcXrHt5rtWLTmk',
+      mongodb_clustername: 'cluster0',
+      mongodb_database: 'my-site',
+    }
   }
 }
 export default nextConfig; 
